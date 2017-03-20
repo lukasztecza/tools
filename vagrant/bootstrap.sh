@@ -45,8 +45,11 @@ fi
 apt-get install -y mysql-client-$MYSQL_VERSION
 
 # Install php and modules
-apt-get install -y php$PHP_VERSION php-curl
+apt-get install -y php$PHP_VERSION php-curl php-mysql
 
 # Display all errors for php
 sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php/$PHP_VERSION/apache2/php.ini
 sed -i "s/display_errors = .*/display_errors = On/" /etc/php/$PHP_VERSION/apache2/php.ini
+
+# Restart apache
+service apache2 restart
