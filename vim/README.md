@@ -105,16 +105,17 @@ PgDown
 /Hello world!
 
 ```
-* To find next one
+To find next one
 ```
 n
 
 ```
-* To find previous one
+To find previous one
 ```
 SHIFT + n
 
 ```
+
 
 - Search Hello case insensitive (in normal mode confirm with enter)
 ```
@@ -127,7 +128,8 @@ SHIFT + n
 :set hlsearch
 
 ```
-* Very useful for searching trailing spaces
+Very useful for searching trailing spaces
+
 
 - Do not highlight search results
 ```
