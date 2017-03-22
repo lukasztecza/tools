@@ -105,17 +105,16 @@ PgDown
 /Hello world!
 
 ```
-To find next one
+- Find next search result (in normal mode)
 ```
 n
 
 ```
-To find previous one
+- Find previous search result (in normal mode)
 ```
 SHIFT + n
 
 ```
-
 
 - Search Hello case insensitive (in normal mode confirm with enter)
 ```
@@ -123,13 +122,11 @@ SHIFT + n
 
 ```
 
-- Highlight search results
+- Highlight search results (very useful for searching trailing spaces)
 ```
 :set hlsearch
 
 ```
-Very useful for searching trailing spaces
-
 
 - Do not highlight search results
 ```
@@ -200,12 +197,7 @@ SHIFT+, SHIFT+,
 
 - To indend or unindent block of text, move cursor to the begining of the text, enter visual mode, move cursor to the end of the text and hit
 ```
-SHIFT+.
-
-```
-or
-```
-SHIFT+,
+SHIFT+. or SHIFT+,
 
 ```
 
