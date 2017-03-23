@@ -52,12 +52,6 @@ git checkout tags/v1.2.3
 
 ```
 
-- Send commited changes in branch1 to remote repository
-```
-git push --set-upstream origin branch1
-
-```
-
 - Checkout to remote branch3 (and create it)
 ```
 git checkout --track origin/branch3
@@ -104,6 +98,13 @@ git add .
 - Commit added files with 'my message'
 ```
 git commit -m 'my message'
+
+```
+
+### Pushing changes to remote repository
+- Send commited changes in branch1 to remote repository
+```
+git push --set-upstream origin branch1
 
 ```
 
