@@ -4,7 +4,6 @@
 - Enter normal mode (if in differnt mode)
 ```
 ESC
-
 ```
 
 - Enter insert mode (if in normal mode)
