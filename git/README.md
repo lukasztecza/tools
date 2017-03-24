@@ -106,3 +106,6 @@ git stash list
 ```
 git stash pop
 ```
+
+### Creating releases
+- To create a release after checking out to a tags/1.5.5 and creating new branch5, push it to github and go to releases, create new release, specify new tag 1.5.6 and point to branch5, set title and description
