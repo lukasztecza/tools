@@ -12,6 +12,14 @@ composer install
 - Update specific package repo1/package1
 ```
 composer update repo1/package1
+
+- Include package form [Packagist](https://packagist.org/)
+```
+}
+    "require": {
+        "symfony/symfony": "v3.2.6"
+    }
+}
 ```
 
 - To make a https://github.com/repo1/package1 available to install via composer add composer.json to main directory (note that your files should be in src/Repo1/Package1)
