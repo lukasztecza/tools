@@ -20,7 +20,7 @@ composer update repo1/package1
     "name": "repo1/package1",
     "autoload": {
         "psr-4" : {
-             "Repo1/Package1" : "src/Repo1/Package1"
+             "Repo1\\Package1" : "src/Repo1/Package1"
          }
     }
 }
