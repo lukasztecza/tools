@@ -12,6 +12,7 @@ composer install
 - Update specific package repo1/package1
 ```
 composer update repo1/package1
+```
 
 - Include package form [Packagist](https://packagist.org/)
 ```
