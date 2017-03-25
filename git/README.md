@@ -105,10 +105,21 @@ git log
 git revert A1A1A1A1A1A1A1A1A1
 ```
 
-### Pushing changes to remote repository
+### Pushing or pulling changes to/from remote repository
 - Send commited changes in branch1 to remote repository
 ```
 git push --set-upstream origin branch1
+```
+
+- Get latest changes of your branch from remote repository
+```
+git pull
+```
+
+- Make your local master the same as the remote one (after breaking it somehow)
+```
+git fetch origin
+git reset --hard origin/master
 ```
 
 ### Saving changes without committing
