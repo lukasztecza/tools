@@ -49,6 +49,16 @@ git checkout tags/v1.2.3
 git checkout --track origin/branch3
 ```
 
+- Show branches (local and remote)
+```
+git branch -a
+```
+
+- Delete branch1
+```
+git branch -d branch1
+```
+
 ### Committing changes
 - Check what files have been changed since last commit
 ```
@@ -83,6 +93,16 @@ git add .
 - Commit added files with 'my message'
 ```
 git commit -m 'my message'
+```
+
+- Show history of commits
+```
+git log
+```
+
+- Revert commit A1A1A1A1A1A1A1A1A1
+```
+git revert A1A1A1A1A1A1A1A1A1
 ```
 
 ### Pushing changes to remote repository
