@@ -75,6 +75,11 @@ git diff
 git diff master branch1
 ```
 
+- Drop changes made to file1 file (before adding or commiting, note file1 is not a branch)
+```
+git checkout file1
+```
+
 - Add file1.txt for future commit
 ```
 git add file1
@@ -88,6 +93,11 @@ git add dir1/dir2
 - Add all files in current directory
 ```
 git add .
+```
+
+- Undo adding files from dir1/dir2 directory
+```
+git reset dir1/dir2
 ```
 
 - Commit added files with 'my message'
