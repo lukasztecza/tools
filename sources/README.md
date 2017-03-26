@@ -7,3 +7,4 @@
 - [MySQL replication on dev](https://www.toptal.com/mysql/mysql-master-slave-replication-tutorial)
 - [MySQL good hierarchy example](http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/)
 - [Common linux comands](http://www.codingbyte.com/30-most-frequently-used-linux-commands-with-examples/)
+- [Cronjobs and PHP](https://code.tutsplus.com/tutorials/managing-cron-jobs-with-php--net-19428)
