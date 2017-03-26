@@ -6,4 +6,4 @@
 - [JavaScript chunked file upload](https://github.com/blueimp/jQuery-File-Upload/wiki/Chunked-file-uploads)
 - [MySQL replication on dev](https://www.toptal.com/mysql/mysql-master-slave-replication-tutorial)
 - [MySQL good hierarchy example](http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/)
-
+- [Common linux comands](http://www.codingbyte.com/30-most-frequently-used-linux-commands-with-examples/)
