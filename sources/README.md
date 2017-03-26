@@ -1,5 +1,5 @@
 ## Sources
-- [PHP the right way] (http://www.phptherightway.com/)
+- [PHP the right way](http://www.phptherightway.com/)
 - [PHP design patterns](https://github.com/domnikl/DesignPatternsPHP)
 - [PHP standards](http://www.php-fig.org/)
 - [JavaScript standards](https://standardjs.com/rules.html)
