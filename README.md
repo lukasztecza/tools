@@ -1,5 +1,5 @@
 ### Common tools
-- [composer](composer/README.md)
+- [composer](composer)
 - [git](git/README.md)
 - [htaccess](htaccess/README.md)
 - [vagrant](vagrant/README.md)
