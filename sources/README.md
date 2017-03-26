@@ -9,3 +9,4 @@
 - [Common linux comands](http://www.codingbyte.com/30-most-frequently-used-linux-commands-with-examples/)
 - [Cronjobs and PHP](https://code.tutsplus.com/tutorials/managing-cron-jobs-with-php--net-19428)
 - [Restful api practices](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
+- [Rest authorization](https://oauth.net/2/)
