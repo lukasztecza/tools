@@ -1,4 +1,5 @@
 ## Common composer commands
+### Basic usage
 - Install latest dependencies according to composer.json and create/update composer.lock accordingly
 ```
 composer update
@@ -23,6 +24,7 @@ composer update repo1/package1
 }
 ```
 
+### Files
 - To make a https://github.com/repo1/package1 available to install via composer add composer.json to main directory (note that your files should be in src/Repo1/Package1)
 ```
 {
@@ -50,6 +52,7 @@ composer update repo1/package1
 }
 ```
 
+### Package versions
 - If in github you have specified a release than you can use the following instead of dev-master
 ```
 v1.1.5 will install package tagged with v1.1.5
