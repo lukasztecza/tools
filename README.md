@@ -1,4 +1,5 @@
 ### Common tools
+- [bash](bash)
 - [composer](composer)
 - [git](git)
 - [htaccess](htaccess)
