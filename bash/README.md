@@ -186,6 +186,37 @@ shutdown -h now
 shutdonw -r now
 ```
 
+### Remote
+- Connect via ssh as user1 to remotehost.com
+```
+ssh user1@remotehost.com
+```
+
+- Connect via ftp to remotehost.com
+```
+ftp remotehost.com
+```
+
+- Connect to the database via mysql using user1 to host dbhost1
+```
+mysql -u user1 -p -h dbhost1
+```
+
+- Check if host1 is responding
+```
+ping host1
+````
+
+- Show network interfaces
+```
+ifconfig
+```
+
+- Download content form http://remotehost1/file1 and save as file1
+```
+wget -O file1 http://remotehost1/file1
+```
+
 ### Flash disk format
 - Show volumes
 ```
