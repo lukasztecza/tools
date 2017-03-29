@@ -1,4 +1,10 @@
 ## Common bash commands
+### Help
+- Show manual for cammand rm
+```
+man rm
+```
+
 ### Navigation
 - Change directory to dir1
 ```
@@ -60,7 +66,12 @@ less file2
 ```
 tail -n 50 file3
 ```
--
+
+- Find differences between file1 and file2
+```
+diff file1 file2
+```
+
 ### Creation
 - Create directory dir1
 ```
@@ -87,14 +98,92 @@ cp -r dir1 dir2
 rm -rf dir1
 ```
 
-### Change permissions for directories for dev environment
+- Extract files from pack1.tar.gz
+```
+gzip -d pack1.tar.gz
+tar xvf pack1.tar
+```
+
+- Pack dir1 with tar and gz
+```
+tar cvf dir1.tar dir1
+gzip dir1.tar
+```
+
+- Install pack2.deb
+```
+dpkg -i pack2.deb
+```
+
+- Remove previously installed pack2.deb
+```
+dpkg -r pack2
+```
+
+### System
+- Switch user to root
+```
+sudo su
+```
+
+- Change permissions for directories for typical dev environment
 ```
 find /opt/lampp/htdocs -type d -exec chmod 755 {} \;
 ```
 
-### Change permissions for files for dev environment
+- Change permissions for files for typical dev environment
 ```
 find /opt/lampp/htdocs -type f -exec chmod 644 {} \;
+```
+
+- Change owner and group of file1 to user1 and group1
+```
+chown user1:group1 file1
+```
+
+- Change password (root can add username to change his password)
+```
+passwd
+```
+
+- Show memory used in system
+```
+free
+```
+
+- Show top processes in the system
+```
+top
+```
+
+- Kill process with PID 25565
+```
+kill 25565
+```
+
+- Show processes for all users with details
+```
+ps aux
+```
+
+- View environment variables which contain SESSION in name or value
+```
+export | grep SESSION
+```
+
+- Set environment variable VAR1 to be 'value1'
+```
+export VAR1=value1
+```
+
+- Shudown system
+```
+shutdown -h now
+```
+
+- Restart system
+```
+shutdonw -r now
 ```
 
 ### Flash disk format
