@@ -8,7 +8,7 @@
 
 # install vim, filezilla, chromium, virtualbox and vagrant
 sudo apt-get update
-sudo apt-get install -y vim filezilla chromium-browser virtualbox vagrant php-cli git composer
+sudo apt-get install -y vim curl filezilla chromium-browser virtualbox vagrant php-cli git composer
 
 # install skype and adobre reader
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
