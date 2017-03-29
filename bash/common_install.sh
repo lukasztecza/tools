@@ -6,7 +6,7 @@
 #https://help.ubuntu.com/community/Lubuntu/Documentation/MinimalInstall
 #and installing lubuntu-desktop, standard-system-utilities
 
-# install vim, filezilla, chromium, virtualbox and vagrant
+# install vim, curl, filezilla, chromium, virtualbox, vagrant, php and composer
 sudo apt-get update
 sudo apt-get install -y vim curl filezilla chromium-browser virtualbox vagrant php-cli git composer
 
