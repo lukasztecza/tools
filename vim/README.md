@@ -168,6 +168,11 @@ SHIFT+, SHIFT+,
 SHIFT+. or SHIFT+,
 ```
 
+- Open autocompletion
+```
+CTRL+n
+```
+
 ### Extended file commands
 - Split view horizontally and show file hello.txt (in command-line mode)
 ```
