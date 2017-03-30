@@ -11,9 +11,24 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 .ssh/id_rsa.pub
 ```
 
-- Add user and email to git file
+- Edit user and email in git global file
 ```
-@todo
+git config --global --edit
+```
+
+- Edit commit message and commiter in last commit
+```
+git commit --amend --reset-author
+```
+
+- Set global user
+```
+git config --global user.name "your_name"
+```
+
+- Set global email
+```
+git config --global user.email "your_email"
 ```
 
 ### Repositories
