@@ -11,6 +11,11 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 .ssh/id_rsa.pub
 ```
 
+- Add user and email to git file
+```
+@todo
+```
+
 ### Repositories
 - Create new repository (it will create .git directory)
 ```
