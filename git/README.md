@@ -146,6 +146,11 @@ git push --set-upstream origin branch1
 git pull
 ```
 
+- Merge branch2 to branch1 (currently on branch1)
+```
+git merge branch2
+```
+
 - Make your local master the same as the remote one (after breaking it somehow)
 ```
 git fetch origin
