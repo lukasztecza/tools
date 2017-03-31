@@ -25,6 +25,11 @@ vagrant box add ubuntu/trusty64
 vagrant up
 ```
 
+- See if virtual machine is running
+```
+vagrant status
+```
+
 - Enter virtual machine
 ```
 vagrant ssh
