@@ -186,6 +186,16 @@ shutdown -h now
 shutdonw -r now
 ```
 
+- Create backup of database1 in file1.sql using username root and password pass (export database)
+```
+mysqldump -u root -ppass db_name > db_backup.sql
+```
+
+- Import file1.sql to database2 in localhost using username root and password pass
+```
+mysql -u root -ppass -h localhost database2 < file1.sql
+```
+
 ### Remote
 - Connect via ssh as user1 to remotehost.com
 ```
