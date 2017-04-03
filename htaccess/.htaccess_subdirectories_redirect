@@ -1,0 +1,4 @@
+# Subdirectories redirect
+<IfModule mod_rewrite.c>
+    RedirectMatch 301 ^/(directory1|directory2|directory3)($|/) http://www.your_domain.com
+</IfModule>
