@@ -49,7 +49,7 @@ git clone https://github.com/lukasztecza/tools.git
 ```
 
 ### Branches
-- Create brnach1 from current branch (for instance from master while branch1 does not exist yet)
+- Create branch1 from current branch (for instance from master while branch1 does not exist yet)
 ```
 git checkout -b branch1
 ```
