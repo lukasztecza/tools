@@ -52,13 +52,15 @@ sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php/"$PHP_VERSION"
 sed -i "s/display_errors = .*/display_errors = On/" /etc/php/"$PHP_VERSION"/apache2/php.ini
 
 # Allow usage of .htaccess files inside /var/www/html
-cat >> /etc/apache2/apache2.conf <<EOL
+if ! fgrep "/var/www/html" /etc/apache2/apache2.conf; then
+    cat >> /etc/apache2/apache2.conf <<EOL
 <Directory /var/www/html>
     Options Indexes FollowSymLinks
     AllowOverride All
     Require all granted
 </Directory>
 EOL
+fi
 
 # Create .htaccess file
 cat > /vagrant/.htaccess <<EOL
@@ -91,3 +93,6 @@ EOL
 
 # Restart apache
 service apache2 restart
+
+echo "[Info] Your project will be accessible via url: http://localhost:4567"
+echo "[Info] You can check sent emails in virtual machine in /var/mail/vagrant file (only emails to vagrant@localhost will reach destination)"
