@@ -91,6 +91,19 @@ cat > /vagrant/index.php <<EOL
 phpinfo();
 EOL
 
+# Install and configure sendmail for localhost
+apt-get install -y sendmail
+if ! fgrep vagrant-ubuntu-trusty-64 /etc/hosts; then
+    echo "127.0.0.1 localhost localhost.localdomain vagrant-ubuntu-trusty-64" | sudo tee -a /etc/hosts
+fi
+if ! fgrep "include('/etc/mail/tls/starttls.m4')dnl" /etc/mail/sendmail.mc; then
+    echo "include('/etc/mail/tls/starttls.m4')dnl" | sudo tee -a /etc/mail/sendmail.mc
+fi
+if ! fgrep "include('/etc/mail/tls/starttls.m4')dnl" /etc/mail/submit.mc; then
+    echo "include('/etc/mail/tls/starttls.m4')dnl" | sudo tee -a /etc/mail/submit.mc
+fi
+yes Y | sendmailconfig
+
 # Restart apache
 service apache2 restart
 
