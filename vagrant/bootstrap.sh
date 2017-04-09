@@ -52,7 +52,7 @@ sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php/"$PHP_VERSION"
 sed -i "s/display_errors = .*/display_errors = On/" /etc/php/"$PHP_VERSION"/apache2/php.ini
 
 # Allow usage of .htaccess files inside /var/www/html
-cat <<EOL >> /etc/apache2/apache2.conf
+cat > /etc/apache2/apache2.conf <<EOL
 <Directory /var/www/html>
     Options Indexes FollowSymLinks
     AllowOverride All
