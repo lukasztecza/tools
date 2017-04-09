@@ -96,16 +96,12 @@ apt-get install -y sendmail
 if ! fgrep vagrant-ubuntu-trusty-64 /etc/hosts; then
     echo "127.0.0.1 localhost localhost.localdomain vagrant-ubuntu-trusty-64" | sudo tee -a /etc/hosts
 fi
-if ! fgrep "include('/etc/mail/tls/starttls.m4')dnl" /etc/mail/sendmail.mc; then
-    echo "include('/etc/mail/tls/starttls.m4')dnl" | sudo tee -a /etc/mail/sendmail.mc
-fi
-if ! fgrep "include('/etc/mail/tls/starttls.m4')dnl" /etc/mail/submit.mc; then
-    echo "include('/etc/mail/tls/starttls.m4')dnl" | sudo tee -a /etc/mail/submit.mc
-fi
 yes Y | sendmailconfig
 
 # Restart apache
 service apache2 restart
 
 echo "[Info] Your project will be accessible via url: http://localhost:4567"
-echo "[Info] You can check sent emails in virtual machine in /var/mail/vagrant file (only emails to vagrant@localhost will reach destination)"
+echo "[Info] You can check sent emails in virtual machine in /var/mail/vagrant file"
+echo "[Info] Only emails to vagrant@localhost will reach destination"
+echo "[Info] .htaccess authentication credentials username: user password: pass"
