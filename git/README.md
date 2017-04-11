@@ -40,7 +40,7 @@ git init
 - To push your local repository to github create empty repository on github (without README.md file) and run the following
 ```
 git remote add origin http://github.com/your_remote/repository
-git push origin master
+git push --set-upstream origin master
 ```
 
 - Clone existing lukasztecza/tools repository
@@ -133,6 +133,12 @@ git log
 - Revert commit A1A1A1A1A1A1A1A1A1
 ```
 git revert A1A1A1A1A1A1A1A1A1
+```
+
+- Commit after updating .gitignore to exclude dir1
+```
+git rm -r --cached dir1
+git commit -m 'Remove the now ignored dir1'
 ```
 
 ### Pushing or pulling changes to/from remote repository
