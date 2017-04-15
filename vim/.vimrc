@@ -4,3 +4,4 @@
 :set shiftwidth=4
 :set number
 :color delek
+:au BufRead,BufNewFile *.html.twig set filetype=html
