@@ -183,7 +183,7 @@ shutdown -h now
 
 - Restart system
 ```
-shutdonw -r now
+shutdown -r now
 ```
 
 - Create backup of database1 in file1.sql using username root and password pass (export database)
