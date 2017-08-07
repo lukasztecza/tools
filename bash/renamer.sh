@@ -4,7 +4,7 @@ echo "===================";
 echo "=     Renamer     =";
 echo "===================";
 
-#check if directory names where passed in line
+#check if directory names were passed in line
 if [ -n "$1" ] && [ -n "$2" ] ; then
     echo "Directories specified in line, assigning them ..."
     dir1="$1"
