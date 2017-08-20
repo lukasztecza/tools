@@ -48,12 +48,14 @@ git push --set-upstream origin master
 git clone https://github.com/lukasztecza/tools.git
 ```
 
-- Build lukasztecza/new_app from existing lukasztecza/skeleton
+- Build lukasztecza/new_app (first create repo on github) from existing lukasztecza/skeleton
 ```
 git init
 git remote add origin https://github.com/lukasztecza/new_app.git
 git remote add skeleton https://github.com/lukasztecza/skeleton.git
 git pull skeleton master
+git add .
+git commit -m 'initial commit'
 git push origin master
 ```
 
