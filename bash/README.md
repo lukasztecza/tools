@@ -42,9 +42,14 @@ find .
 find dir1 -type f -iname 'abc*'
 ```
 
-- Show files which contain 'abc1 cde2' case insensitive starting in current directory showing 2 lines before and 5 after
+- Show lines which contain 'abc1 cde2' case insensitive starting in current directory showing 2 lines before and 5 after
 ```
 fgrep -ri -B 2 -A 5 'abc1 cde2' .
+```
+
+- Show lines which does not contain 'abc2' in the output of file1
+```
+cat file1 | grep -v 'abc2' .
 ```
 
 - Find location of file1.txt
