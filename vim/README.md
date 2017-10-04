@@ -138,6 +138,13 @@ SHITF + d
 p
 ```
 
+- When pasting from clipboard not from vims register to avoid extra spaces (in normal mode)
+```
+:set paste
+CTRL+v
+:set nopaste
+```
+
 - Replace all number1 with word2 in line (in command-line mode) 
 ```
 :s/number1/word2/g
