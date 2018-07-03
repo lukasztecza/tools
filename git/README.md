@@ -152,6 +152,11 @@ git rm -r --cached dir1
 git commit -m 'Remove the now ignored dir1'
 ```
 
+- Cleaning dir1/file1 file from history
+```
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch dir1/file1' --prune-empty --tag-name-filter cat -- --all
+```
+
 ### Pushing or pulling changes to/from remote repository
 - Send commited changes in branch1 to remote repository
 ```
