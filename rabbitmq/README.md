@@ -1,3 +1,14 @@
+- get erlang package from and install it
+```
+https://bintray.com/rabbitmq/debian/erlang/
+sudo dpkg -i packagename.deb
+```
+
+- install rabbit following
+```
+https://www.rabbitmq.com/install-debian.html
+```
+
 - list rabbit queues
 ```
 rabbitmqctl list_queues
