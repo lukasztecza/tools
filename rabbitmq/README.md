@@ -1,5 +1,7 @@
-
-
+- list rabbit queues
+```
+rabbitmqctl list_queues
+```
 
 - enable web ui
 ```
