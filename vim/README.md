@@ -102,6 +102,11 @@ SHIFT + n
 /\cHello
 ```
 
+- Search Hello case sensitive (in normal mode confirm with enter)
+```
+/\CHello
+```
+
 - Highlight search results (very useful for searching trailing spaces)
 ```
 :set hlsearch
