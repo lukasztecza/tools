@@ -109,6 +109,11 @@ gzip -d pack1.tar.gz
 tar xvf pack1.tar
 ```
 
+- Extract files from pack2.tar.gz quick
+```
+tar -zxvf pack2.tar.gz
+```
+
 - Pack dir1 with tar and gz
 ```
 tar cvf dir1.tar dir1
