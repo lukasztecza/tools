@@ -157,6 +157,11 @@ git commit -m 'Remove the now ignored dir1'
 git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch dir1/file1' --prune-empty --tag-name-filter cat -- --all
 ```
 
+- Change commit message
+```
+git commit --amenb
+```
+
 ### Pushing or pulling changes to/from remote repository
 - Send commited changes in branch1 to remote repository
 ```
