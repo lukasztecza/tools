@@ -62,3 +62,8 @@ v1.*   will install latest package form v1.0.0 to v1.9.9
 *      will install latest package
 ```
 
+### Issues
+- It may happen that composer can not connect to packagist properly due to ip6 issues, a workaround is
+```
+sudo sh -c "echo 'precedence ::ffff:0:0/96 100' >> /etc/gai.conf"
+```
