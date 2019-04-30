@@ -26,7 +26,7 @@ composer update repo1/package1
 
 - If nothing helps and memory limit exhausted error occurs use
 ```
-php -d memory_limit=-1 /usr/local/bin/composer update "repo1/package1"
+php -d memory_limit=-1 /usr/local/bin/composer update repo1/package1
 ```
 
 ### Files
