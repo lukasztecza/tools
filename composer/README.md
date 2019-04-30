@@ -24,6 +24,11 @@ composer update repo1/package1
 }
 ```
 
+- If nothing helps and memory limit exhausted error occurs use
+```
+php -d memory_limit=-1 /usr/local/bin/composer update "parka/http-client"
+```
+
 ### Files
 - To make a https://github.com/repo1/package1 available to install via composer add composer.json to main directory (note that your files should be in src/Repo1/Package1)
 ```
