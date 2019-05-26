@@ -7,7 +7,7 @@ dpkg -i docker.deb
 rm docker.deb
 sudo usermod -a -G docker user1 #it may not be the safest choice
 ```
--or use docs
+- or use docs
 ```
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ```
