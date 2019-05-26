@@ -5,7 +5,11 @@ curl -L 'https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64
 apt-get install -y libsystemd-journal0 #required by docker
 dpkg -i docker.deb
 rm docker.deb
-sudo usermod -a -G docker user1
+sudo usermod -a -G docker user1 #it may not be the safest choice
+```
+-or use docs
+```
+https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ```
 
 - install docker-compose 1.21.2 version
