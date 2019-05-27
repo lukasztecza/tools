@@ -93,3 +93,7 @@ gcloud --help
 gcloud topic --help
 gcloud help [ANY COMMAND]
 ```
+- show useful info about gcloud
+```
+gcloud info
+```
