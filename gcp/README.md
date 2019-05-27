@@ -57,3 +57,19 @@ gcloud components remove COMPONENT_ID
  Cloud Storage Command Line Tool                      │ gsutil
 ──────────────────────────────────────────────────────┴──────────────────────────
 ```
+- make sure you have a project in google cloud (if not create one)
+```
+https://console.cloud.google.com
+```
+- initialize sdk
+```
+gcloud init
+```
+- it will prompt for credentials over browser or console 
+- allow gcloud sdk to access what it needs
+- select project to use (back in terminal)
+- select default zone to use - it may be changed later with
+```
+gcloud config set compute/zone NAME
+```
+
