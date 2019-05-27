@@ -83,6 +83,7 @@ gcloud config set compute/region NAME
 - gcloud configuration file will live here
 ```
 /home/youruser/.boto
+/home/youruser/.config/gcloud/*
 ```
 - for help run
 ```
