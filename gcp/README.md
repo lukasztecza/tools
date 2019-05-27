@@ -72,4 +72,23 @@ gcloud init
 ```
 gcloud config set compute/zone NAME
 ```
-
+- you may change default region with
+```
+gcloud config set compute/region NAME
+```
+- all above will append gcloud lines to run on bash startup
+```
+/home/youruser/.bashrc
+```
+- gcloud configuration file will live here
+```
+/home/youruser/.boto
+```
+- for help run
+```
+gcloud help config
+gcloud topic configurations
+gcloud --help
+gcloud topic --help
+gcloud help [ANY COMMAND]
+```
