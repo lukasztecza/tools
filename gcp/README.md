@@ -97,3 +97,7 @@ gcloud help [ANY COMMAND]
 ```
 gcloud info
 ```
+- ssh to your google compute engine instance
+```
+gcloud compute ssh your-gce-instance
+```
