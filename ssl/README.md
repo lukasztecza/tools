@@ -22,3 +22,12 @@ A challenge password []:
 An optional company name []:
 ```
 - submit csr file to Certificate Authority in order to get activate certificate
+- choose how you want to confirm domain ownership (simplest is dns-based)
+- get cname record that you need to set up (from your registrar/certificate authority)
+```
+Domains to validate: your_domain
+Type: CNAME Record
+Host: some_value_to_put_as_host (some providers add your domain name to host value some do not, make sure to check that)
+Target: some_value_to_put_as_target
+```
+- set these values and set lowest possible TTL time
