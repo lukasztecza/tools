@@ -36,4 +36,15 @@ Target: some_value_to_put_as_target
 - set these values and set the lowest possible TTL time
 - it may take even several hours to validate your ownership so be patient
 - once domain ownership is verified certificate authority will send you an email with crt file
-- todo write the rest
+- add to your nginx file under server
+```
+listen 443 ssl;
+ssl_certificate /path_to_received_crt_file/server.crt;
+ssl_certificate_key /path_to_private_key_generated_at_the_begining/server.key;
+```
+- you may want to add some ssl session caching
+```
+ssl_session_cache shared:SSL:10m;
+ssl_session_timeout 10m;
+keepalive_timeout 70;
+```
