@@ -101,3 +101,24 @@ gcloud info
 ```
 gcloud compute ssh your-gce-instance
 ```
+- if you use private docker registry on google cloud you may need
+```
+gcloud auth configure-docker
+```
+- to push image to gcloud use
+```
+docker tag your_local_image GOOGLE_HOST:YOUR_PROJECT_NAME:YOUR_IMAGE_NAME
+docker push GOOGLE_HOST:YOUR_PROJECT_NAME:YOUR_IMAGE_NAME
+```
+- to pull image to gcloud use
+```
+docker pull GOOGLE_HOST:YOUR_PROJECT_NAME:YOUR_IMAGE_NAME
+```
+- sometimes you may find it usefull to create json based authentication
+- create json key for service account in gcloud under `iam-admin/serviceaccounts` and download json file
+- grant newly created service account desired priviliges for instance under `storage/browser` in `permissions` tab
+- for docker registry it is enough to assign `Storage Object Viewer` role
+- now from within instance you may use to login and be able to pull from private docker registry
+```
+json_key_file.json | sudo docker login -u _json_key --password-stdin https://GOOGLE_HOST
+```
