@@ -243,12 +243,27 @@ wget -O file1 http://remotehost1/file1
 fdisk -l
 ```
 
+- If you need to create partition table (or fix it)
+```
+sudo parted /dev/sdc mklabel msdos
+```
+
+- Create primary partition (if one does not exist already)
+```
+sudo parted -a none /dev/sdc mkpart primary fat32 0 8192
+```
+
 - Unmount usb  flash drive (for instance /dev/sdb1)
 ```
-umnount /dev/sdb1
+umount /dev/sdb1
 ```
 
 - Format to FAT32 adding custom name USBDR1
 ```
 mkfs.vfat -n 'USBDR1' -I /dev/sdb1
+```
+
+- Mount your flash drive
+```
+mount /dev/sdb1 /mnt/somewhere
 ```
