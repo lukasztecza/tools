@@ -48,3 +48,20 @@ ssl_session_cache shared:SSL:10m;
 ssl_session_timeout 10m;
 keepalive_timeout 70;
 ```
+
+### Let's Encrypt
+follow this for automatic process
+```
+https://certbot.eff.org/lets-encrypt/debianbuster-nginx`
+```
+in case of docker containers architecture follow
+```
+https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71
+```
+or do it manually
+```
+sudo apt-get install certbot python-certbot-nginx
+sudo certbot certonly --manual
+```
+this will require you to output challenge string in your app for given reqest and after success you will get two files
+once completed just copy certificate files (crt and key) where web server is looking for them
