@@ -1,4 +1,9 @@
 ## Common git commands
+- Get git from repository
+```
+apt update
+apt get install git
+```
 
 ### Create ssh key so you can connect to github
 - Create key on your machine (it will create .ssh directory)
