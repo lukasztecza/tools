@@ -16,6 +16,8 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ```
 https://docs.docker.com/engine/security/rootless/
 ```
+- you may need to do the following in order to make it work so read your distribution hints and reqs from site above
+
 
 - install docker-compose 1.21.2 version
 ```
