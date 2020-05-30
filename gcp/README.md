@@ -4,7 +4,7 @@
 https://cloud.google.com/sdk/docs/quickstart-linux
 ```
 
-- or use direct link 64 bit
+- or use direct link 64 bit (look for latest one in above step)
 ```
 https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-247.0.0-linux-x86_64.tar.gz
 ```
@@ -14,17 +14,17 @@ https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-247.
 tar zxvf [ARCHIVE_FILE] google-cloud-sdk
 ```
 
-- run installation script
+- run installation script (optional cause you can invoke all actions through full path)
 ```
 ./google-cloud-sdk/install.sh
 ```
 
-- install component
+- install component (optional)
 ```
 gcloud components install COMPONENT_ID
 ```
 
-- remove component
+- remove component (optional)
 ```
 gcloud components remove COMPONENT_ID
 ```
@@ -61,7 +61,7 @@ gcloud components remove COMPONENT_ID
 ```
 https://console.cloud.google.com
 ```
-- initialize sdk
+- initialize sdk (it will for instance allow ssh access to your gce instances)
 ```
 gcloud init
 ```
@@ -110,7 +110,7 @@ gcloud auth configure-docker
 docker tag your_local_image GOOGLE_HOST:YOUR_PROJECT_NAME:YOUR_IMAGE_NAME
 docker push GOOGLE_HOST:YOUR_PROJECT_NAME:YOUR_IMAGE_NAME
 ```
-- to pull image to gcloud use
+- to pull image from gcloud use
 ```
 docker pull GOOGLE_HOST:YOUR_PROJECT_NAME:YOUR_IMAGE_NAME
 ```
