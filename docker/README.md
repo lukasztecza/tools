@@ -12,6 +12,11 @@ sudo usermod -a -G docker user1 #it may not be the safest choice
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ```
 
+- regarding adding user1 to docker group it is rather batter to do something completely opposite and use rootless mode
+```
+https://docs.docker.com/engine/security/rootless/
+```
+
 - install docker-compose 1.21.2 version
 ```
 curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/bin/docker-compose
