@@ -267,3 +267,8 @@ mkfs.vfat -n 'USBDR1' -I /dev/sdb1
 ```
 mount /dev/sdb1 /mnt/somewhere
 ```
+### Ffmpeg
+- Reduce size of the movie and set codec to the popular one
+```
+ ffmpeg -i input.mp4 -vcodec h264 -crf 28 output.mp4
+```
