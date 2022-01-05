@@ -120,6 +120,11 @@ tar cvf dir1.tar dir1
 gzip dir1.tar
 ```
 
+- Pack dir1 with tar and gz quick
+```
+tar -czvf dir1.tar.gz dir1
+```
+
 - Install pack2.deb
 ```
 dpkg -i pack2.deb
